@@ -23,7 +23,7 @@
 				cursor: pointer;
 				padding: 14px 16px;
 				font-size: 17px;
-				width: 25%;
+				
 			}
 
 			.tablink:hover {
@@ -32,7 +32,7 @@
 
 			/* Style the tab content (and add height:100% for full page content) */
 			.tabcontent {
-				color: white;
+				color: black;
 				display: none;
 				padding: 100px 20px;
 				height: 100%;
@@ -41,34 +41,74 @@
 			#Home {background-color: red;}
 			#News {background-color: green;}
 			#Contact {background-color: blue;}
-			#About {background-color: orange;}
+			/*#About {background-color: orange;}*/
 		</style>
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+		</script>
 	</head>
 	<body>
 
 		<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
 		<button class="tablink" onclick="openPage('News', this, 'green')">News</button>
-		<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-		<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+		<button class="tablink" onclick="openPage('Studies', this, 'grey')">Studies</button>
+		<button class="tablink" onclick="openPage('Seminars', this, 'grey')">Seminars</button>
+		<button class="tablink" onclick="openPage('Certifications', this, 'grey')">Certifications</button>
+		<button class="tablink" onclick="openPage('Experience', this, 'grey')">Experience</button>
+		<button class="tablink" onclick="openPage('Accomplishments', this, 'grey')">Accomplishments</button>
+		<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact and personal information</button>
+		<button class="tablink" onclick="openPage('About', this, 'grey')">About</button>
 
 		<div id="Home" class="tabcontent">
 		  <h3>Home</h3>
-		  <p>Home is where the heart is..</p>
+		  <script src="home.js">
+		  </script>
 		</div>
 
 		<div id="News" class="tabcontent">
 		  <h3>News</h3>
 		  <p>Some news this fine day!</p> 
 		</div>
+		
+		<div id="Studies" class="tabcontent">
+		  <h3>Studies</h3>
+		  <p>My studies.</p> 
+		</div>
+		
+		<div id="Seminars" class="tabcontent">
+		  <h3>Seminars</h3>
+		  <p>Seminars attended.</p> 
+		</div>
+		
+		<div id="Certifications" class="tabcontent">
+		  <h3>Certifications</h3>
+		  <p>Certifications acquired.</p> 
+		</div>
+		
+		<div id="Experience" class="tabcontent">
+		  <h3>Experience</h3>
+		  <p>My professional experience.</p> 
+		</div>
+		
+		<div id="Accomplishments" class="tabcontent">
+		  <h3>Accomplishments-Projects</h3>
+		  <p>Some of my accomplishments and projects.</p> 
+		</div>
 
 		<div id="Contact" class="tabcontent">
-		  <h3>Contact</h3>
+		  <h3>Contact and personal information details.</h3>
 		  <p>Get in touch, or swing by for a cup of coffee.</p>
 		</div>
 
 		<div id="About" class="tabcontent">
-		  <h3>About</h3>
-		  <p>Who we are and what we do.</p>
+			
+			<script>
+				$(document).ready(function(){
+						$("#About").load("Georgios_FragkosCV.html");
+				});
+			</script>
 		</div>
 
 		<script>
