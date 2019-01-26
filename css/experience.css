@@ -1,0 +1,24 @@
+body {
+  font-size: 100%;
+}
+
+.JobTitle {
+	text-transform: uppercase;
+	color: orange;
+}
+
+.Employer {
+	text-transform: uppercase;
+}
+
+.Location {
+	
+}
+
+.Duration {
+	
+}
+
+.Description {
+	
+}

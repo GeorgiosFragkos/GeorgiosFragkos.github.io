@@ -13,7 +13,7 @@ function openPage(pageName,elmnt) {
 	}
 	
 
-$(alert("Site under construction!\nStill testing a ideas and technologies..."));
+$(alert("Site under construction!\nStill testing ideas and technologies..."));
 	
 $("#defaultOpenButton").attr("onclick", "openPage('home', this)");
 $("#newsButton").attr("onclick", "openPage('news', this)");
